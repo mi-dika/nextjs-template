@@ -1,0 +1,13 @@
+{
+  "name": "@midika/config-tailwind",
+  "version": "0.1.0",
+  "private": true,
+  "main": "preset.js",
+  "files": [
+    "preset.js"
+  ],
+  "peerDependencies": {
+    "tailwindcss": "^3.4.0"
+  }
+}
+

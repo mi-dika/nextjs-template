@@ -1,0 +1,17 @@
+{
+  "extends": "@midika/config-typescript/base.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "composite": false,
+    "incremental": false,
+    "rootDir": "src",
+    "outDir": "dist",
+    "tsBuildInfoFile": "dist/.tsbuildinfo",
+    "types": ["node"],
+    "typeRoots": ["./node_modules/@types", "../../node_modules/@types"]
+  },
+  "files": ["src/index.ts", "src/types.ts", "src/registry.ts"],
+  "include": ["src"],
+  "exclude": ["dist", "node_modules"]
+}
+

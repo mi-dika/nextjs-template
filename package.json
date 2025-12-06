@@ -1,0 +1,25 @@
+{
+  "name": "midika-nextjs-template",
+  "version": "0.1.0",
+  "private": true,
+  "packageManager": "pnpm@10.24.0",
+  "engines": {
+    "node": ">=20.9.0",
+    "pnpm": ">=10.0.0"
+  },
+  "scripts": {
+    "dev": "turbo dev",
+    "lint": "turbo lint",
+    "type-check": "turbo type-check",
+    "test": "turbo test",
+    "coverage": "pnpm -C apps/web vitest run --coverage --pool=threads --maxWorkers 1 --minWorkers 1 --fileParallelism false",
+    "build": "turbo build",
+    "format": "turbo format",
+    "check": "turbo lint type-check test build"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.25",
+    "turbo": "^2.3.0",
+    "typescript": "^5.7.0"
+  }
+}

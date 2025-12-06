@@ -1,0 +1,15 @@
+{
+  "name": "@midika/config-typescript",
+  "version": "0.1.0",
+  "private": true,
+  "main": "base.json",
+  "files": [
+    "base.json",
+    "nextjs.json",
+    "package.json"
+  ],
+  "peerDependencies": {
+    "typescript": "^5.7.0"
+  }
+}
+

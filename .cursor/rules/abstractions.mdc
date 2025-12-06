@@ -1,0 +1,8 @@
+# Repo Rules
+
+- Use `@midika/utils` for neverthrow helpers and i18n factories.
+- Keep UI strings in `apps/web/src/lib/translations.ts`.
+- Use `@midika/auth` for authentication; do not wire providers directly in UI.
+- Use `@midika/app-sdk` for extension manifests and registries.
+- Prefer Server Components; mark Client Components only when needed.
+- Apply KISS/DRY/YAGNI when adding code or docs.

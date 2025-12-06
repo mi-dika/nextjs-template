@@ -1,0 +1,10 @@
+{
+  "projectConfig": {
+    "project": "midika-nextjs-template"
+  },
+  "functions": "convex/",
+  "compatibility": {
+    "moduleSystem": "esm"
+  }
+}
+

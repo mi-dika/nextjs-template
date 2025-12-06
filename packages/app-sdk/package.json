@@ -1,0 +1,28 @@
+{
+  "name": "@midika/app-sdk",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format=esm,cjs --dts --sourcemap --clean",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "@midika/utils": "workspace:*"
+  },
+  "devDependencies": {
+    "@midika/config-eslint": "workspace:*",
+    "@midika/config-typescript": "workspace:*",
+    "eslint": "^9.14.0",
+    "eslint-config-next": "^16.0.0",
+    "tsup": "^8.3.0",
+    "typescript": "^5.7.0"
+  }
+}
+

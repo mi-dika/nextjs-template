@@ -1,0 +1,19 @@
+{
+  "extends": "@midika/config-typescript/base.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "composite": false,
+    "incremental": false,
+    "rootDir": "src",
+    "outDir": "dist",
+    "tsBuildInfoFile": "dist/.tsbuildinfo",
+    "types": ["node", "react", "react-dom"],
+    "typeRoots": ["./node_modules/@types"],
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "include": ["src"],
+  "exclude": ["dist", "node_modules"]
+}
+

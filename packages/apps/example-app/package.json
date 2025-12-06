@@ -1,0 +1,11 @@
+{
+  "name": "@midika/example-app",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "src/manifest.ts",
+  "dependencies": {
+    "@midika/app-sdk": "workspace:*"
+  }
+}
+

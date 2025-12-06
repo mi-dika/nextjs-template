@@ -1,0 +1,9 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "composite": true
+  },
+  "include": ["apps", "packages", "convex", "scripts", "turbo.json"],
+  "exclude": ["node_modules"]
+}
+

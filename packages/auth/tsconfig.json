@@ -1,0 +1,25 @@
+{
+  "extends": "@midika/config-typescript/base.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "composite": false,
+    "incremental": false,
+    "rootDir": "src",
+    "outDir": "dist",
+    "tsBuildInfoFile": "dist/.tsbuildinfo",
+    "types": ["node"],
+    "typeRoots": ["./node_modules/@types", "../../node_modules/@types"]
+  },
+  "files": [
+    "src/index.ts",
+    "src/types.ts",
+    "src/provider.ts",
+    "src/providers/convex.ts",
+    "src/providers/workos.ts",
+    "src/providers/clerk.ts",
+    "src/memory-provider.ts"
+  ],
+  "include": ["src"],
+  "exclude": ["dist", "node_modules"]
+}
+

@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "jsx": "react-jsx",
+    "allowJs": false,
+    "skipLibCheck": true,
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "verbatimModuleSyntax": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+    "allowSyntheticDefaultImports": true,
+    "incremental": true,
+    "types": ["node"],
+    "paths": {
+      "@/*": ["./apps/web/src/*"],
+      "@midika/ui": ["./packages/ui/src/index.ts"],
+      "@midika/auth": ["./packages/auth/src/index.ts"],
+      "@midika/app-sdk": ["./packages/app-sdk/src/index.ts"],
+      "@midika/utils": ["./packages/utils/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "dist", ".next", "coverage"]
+}
+

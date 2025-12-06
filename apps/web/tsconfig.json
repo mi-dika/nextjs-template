@@ -1,0 +1,24 @@
+{
+  "extends": "@midika/config-typescript/nextjs.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "types": ["node", "react", "react-dom"],
+    "typeRoots": ["./node_modules/@types"],
+    "paths": {
+      "@/*": ["./src/*"],
+      "@midika/ui": ["./node_modules/@midika/ui/src/index.ts"],
+      "@midika/auth": ["./node_modules/@midika/auth/src/index.ts"],
+      "@midika/app-sdk": ["./node_modules/@midika/app-sdk/src/index.ts"],
+      "@midika/utils": ["./node_modules/@midika/utils/src/index.ts"],
+      "@midika/config-tailwind/preset.js": ["./types/config-tailwind.d.ts"]
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts"
+  ],
+  "exclude": ["node_modules"]
+}
+

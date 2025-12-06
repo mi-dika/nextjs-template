@@ -1,0 +1,15 @@
+packages:
+  - apps/*
+  - packages/*
+  - packages/config/*
+  - packages/apps/*
+  - convex
+
+catalog:
+  turbo: ^2.3.0
+
+onlyBuiltDependencies:
+  - core-js-pure
+  - esbuild
+  - sharp
+  - unrs-resolver

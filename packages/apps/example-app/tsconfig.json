@@ -1,0 +1,9 @@
+{
+  "extends": "@midika/config-typescript/base.json",
+  "compilerOptions": {
+    "baseUrl": "."
+  },
+  "include": ["src"],
+  "exclude": ["node_modules"]
+}
+

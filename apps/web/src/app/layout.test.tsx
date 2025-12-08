@@ -14,11 +14,10 @@ describe("RootLayout", () => {
     const html = renderToStaticMarkup(
       <RootLayout>
         <div data-testid="child">content</div>
-      </RootLayout>
+      </RootLayout>,
     );
 
     expect(html).toContain(`lang="${DEFAULT_LOCALE}"`);
     expect(html).toContain('data-testid="child"');
   });
 });
-

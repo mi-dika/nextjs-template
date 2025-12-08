@@ -6,9 +6,8 @@ const config: Config = {
   content: [
     "./src/app/**/*.{ts,tsx,mdx}",
     "./src/components/**/*.{ts,tsx,mdx}",
-    "./src/lib/**/*.{ts,tsx}"
-  ]
+    "./src/lib/**/*.{ts,tsx}",
+  ],
 };
 
 export default config;
-

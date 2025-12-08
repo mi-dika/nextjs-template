@@ -6,11 +6,10 @@ const preview: Preview = {
     controls: { expanded: true },
     a11y: {
       config: {
-        rules: [{ id: "color-contrast", enabled: true }]
-      }
-    }
-  }
+        rules: [{ id: "color-contrast", enabled: true }],
+      },
+    },
+  },
 };
 
 export default preview;
-

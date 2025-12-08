@@ -29,7 +29,7 @@ export const translations: Record<Locale, Record<string, string>> = {
       "Tailwind presets, shared ESLint/TS configs, and preconfigured scripts.",
     "links.docs": "https://github.com/mi-dika/nextjs-template/tree/main/docs",
     "links.repo": "https://github.com/mi-dika/nextjs-template",
-    "toasts.sample": "Welcome to the starter!"
+    "toasts.sample": "Welcome to the starter!",
   },
   it: {
     "meta.title": "Starter Midika Next.js + Convex",
@@ -57,11 +57,10 @@ export const translations: Record<Locale, Record<string, string>> = {
       "Preset Tailwind, config ESLint/TS condivisi e script preconfigurati.",
     "links.docs": "https://github.com/mi-dika/nextjs-template/tree/main/docs",
     "links.repo": "https://github.com/mi-dika/nextjs-template",
-    "toasts.sample": "Benvenuto nello starter!"
-  }
+    "toasts.sample": "Benvenuto nello starter!",
+  },
 };
 
 export const DEFAULT_LOCALE: Locale = "en";
 export const supportedLocales: Locale[] = listLocales(translations);
 export const translate = createTranslator<Locale>(translations, DEFAULT_LOCALE);
-

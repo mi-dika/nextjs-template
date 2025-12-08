@@ -3,7 +3,7 @@ import { LandingHero } from "./landing-hero";
 
 const meta: Meta<typeof LandingHero> = {
   title: "Landing/Hero",
-  component: LandingHero
+  component: LandingHero,
 };
 
 export default meta;
@@ -11,4 +11,3 @@ export default meta;
 type Story = StoryObj<typeof LandingHero>;
 
 export const Default: Story = {};
-

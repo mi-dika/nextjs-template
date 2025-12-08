@@ -5,13 +5,12 @@ const config: PlaywrightTestConfig = {
   webServer: {
     command: "pnpm dev",
     port: 3000,
-    reuseExistingServer: !process.env.CI
+    reuseExistingServer: !process.env.CI,
   },
   use: {
     baseURL: "http://localhost:3000",
-    headless: true
-  }
+    headless: true,
+  },
 };
 
 export default config;
-

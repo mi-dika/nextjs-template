@@ -3,7 +3,7 @@ import {
   DEFAULT_LOCALE,
   supportedLocales,
   translate,
-  translations
+  translations,
 } from "./translations";
 
 describe("translations", () => {
@@ -14,7 +14,10 @@ describe("translations", () => {
 
   it("falls back to default locale when a translation is missing", () => {
     const fallbackKey = "meta.title";
-    const translated = translate(fallbackKey, "unknown" as typeof DEFAULT_LOCALE);
+    const translated = translate(
+      fallbackKey,
+      "unknown" as typeof DEFAULT_LOCALE,
+    );
     expect(translated).toBe(translations[DEFAULT_LOCALE][fallbackKey]);
   });
 
@@ -23,4 +26,3 @@ describe("translations", () => {
     expect(new Set(supportedLocales).size).toBe(supportedLocales.length);
   });
 });
-

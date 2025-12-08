@@ -6,16 +6,15 @@ const config: StorybookConfig = {
     "@storybook/addon-essentials",
     "@storybook/addon-a11y",
     "@storybook/addon-links",
-    "@storybook/addon-interactions"
+    "@storybook/addon-interactions",
   ],
   framework: {
     name: "@storybook/nextjs",
-    options: {}
+    options: {},
   },
   docs: {
-    autodocs: true
-  }
+    autodocs: true,
+  },
 };
 
 export default config;
-

@@ -3,11 +3,11 @@ import { renderToStaticMarkup } from "react-dom/server";
 import HomePage from "./page";
 
 vi.mock("../components/landing-hero", () => ({
-  LandingHero: () => <div data-testid="landing-hero">hero</div>
+  LandingHero: () => <div data-testid="landing-hero">hero</div>,
 }));
 
 vi.mock("@midika/ui", () => ({
-  Toaster: () => <div data-testid="toaster" />
+  Toaster: () => <div data-testid="toaster" />,
 }));
 
 describe("HomePage", () => {
@@ -18,4 +18,3 @@ describe("HomePage", () => {
     expect(html).toContain('data-testid="toaster"');
   });
 });
-

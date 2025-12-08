@@ -11,24 +11,24 @@ export function LandingHero() {
   const features = [
     {
       title: t("features.modular.title"),
-      body: t("features.modular.body")
+      body: t("features.modular.body"),
     },
     {
       title: t("features.auth.title"),
-      body: t("features.auth.body")
+      body: t("features.auth.body"),
     },
     {
       title: t("features.ai.title"),
-      body: t("features.ai.body")
+      body: t("features.ai.body"),
     },
     {
       title: t("features.testing.title"),
-      body: t("features.testing.body")
+      body: t("features.testing.body"),
     },
     {
       title: t("features.dx.title"),
-      body: t("features.dx.body")
-    }
+      body: t("features.dx.body"),
+    },
   ];
 
   return (
@@ -80,4 +80,3 @@ export function LandingHero() {
     </div>
   );
 }
-

@@ -22,7 +22,7 @@ describe("LandingHero", () => {
       "features.auth",
       "features.ai",
       "features.testing",
-      "features.dx"
+      "features.dx",
     ] as const;
 
     featureKeys.forEach((key) => {
@@ -38,15 +38,14 @@ describe("LandingHero", () => {
     expect(html).toMatch(
       new RegExp(
         `<a[^>]+href="${t["links.docs"]}"[^>]+target="_blank"[^>]+rel="noreferrer"`,
-        "i"
-      )
+        "i",
+      ),
     );
     expect(html).toMatch(
       new RegExp(
         `<a[^>]+href="${t["links.repo"]}"[^>]+target="_blank"[^>]+rel="noreferrer"`,
-        "i"
-      )
+        "i",
+      ),
     );
   });
 });
-

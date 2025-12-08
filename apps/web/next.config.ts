@@ -7,11 +7,10 @@ const config: NextConfig = {
     "@midika/ui",
     "@midika/auth",
     "@midika/app-sdk",
-    "@midika/utils"
+    "@midika/utils",
   ],
   typedRoutes: true,
-  serverExternalPackages: []
+  serverExternalPackages: [],
 };
 
 export default config;
-

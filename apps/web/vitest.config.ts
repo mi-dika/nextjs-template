@@ -9,13 +9,13 @@ export default defineConfig({
       { find: /^react$/, replacement: require.resolve("react") },
       {
         find: /^react\/jsx-runtime$/,
-        replacement: require.resolve("react/jsx-runtime")
+        replacement: require.resolve("react/jsx-runtime"),
       },
       {
         find: /^react\/jsx-dev-runtime$/,
-        replacement: require.resolve("react/jsx-dev-runtime")
-      }
-    ]
+        replacement: require.resolve("react/jsx-dev-runtime"),
+      },
+    ],
   },
   test: {
     environment: "jsdom",
@@ -25,7 +25,7 @@ export default defineConfig({
     exclude: ["node_modules/**", "e2e/**"],
     passWithNoTests: true,
     deps: {
-      moduleDirectories: ["node_modules", "../../node_modules"]
+      moduleDirectories: ["node_modules", "../../node_modules"],
     },
     coverage: {
       provider: "v8",
@@ -36,15 +36,14 @@ export default defineConfig({
         "postcss.config.js",
         "tailwind.config.ts",
         "playwright.config.ts",
-        "src/**/*.stories.tsx"
+        "src/**/*.stories.tsx",
       ],
       thresholds: {
         lines: 85,
         branches: 80,
         functions: 80,
-        statements: 85
-      }
-    }
-  }
+        statements: 85,
+      },
+    },
+  },
 });
-

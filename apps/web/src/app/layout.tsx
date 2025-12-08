@@ -8,11 +8,11 @@ const description = translate("meta.description", DEFAULT_LOCALE);
 export const metadata: Metadata = {
   title,
   description,
-  metadataBase: new URL("http://localhost:3000")
+  metadataBase: new URL("http://localhost:3000"),
 };
 
 export default function RootLayout({
-  children
+  children,
 }: {
   children: React.ReactNode;
 }) {
@@ -24,4 +24,3 @@ export default function RootLayout({
     </html>
   );
 }
-

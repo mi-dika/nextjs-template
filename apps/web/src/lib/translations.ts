@@ -27,8 +27,8 @@ export const translations: Record<Locale, Record<string, string>> = {
     "features.dx.title": "Developer Experience",
     "features.dx.body":
       "Tailwind presets, shared ESLint/TS configs, and preconfigured scripts.",
-    "links.docs": "/docs",
-    "links.repo": "https://github.com/midika-it/nextjs-template",
+    "links.docs": "https://github.com/mi-dika/nextjs-template/tree/main/docs",
+    "links.repo": "https://github.com/mi-dika/nextjs-template",
     "toasts.sample": "Welcome to the starter!"
   },
   it: {
@@ -55,8 +55,8 @@ export const translations: Record<Locale, Record<string, string>> = {
     "features.dx.title": "Developer Experience",
     "features.dx.body":
       "Preset Tailwind, config ESLint/TS condivisi e script preconfigurati.",
-    "links.docs": "/docs",
-    "links.repo": "https://github.com/midika-it/nextjs-template",
+    "links.docs": "https://github.com/mi-dika/nextjs-template/tree/main/docs",
+    "links.repo": "https://github.com/mi-dika/nextjs-template",
     "toasts.sample": "Benvenuto nello starter!"
   }
 };

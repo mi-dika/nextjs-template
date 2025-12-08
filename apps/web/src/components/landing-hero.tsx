@@ -1,13 +1,11 @@
 "use client";
 
-import type { Route } from "next";
-import Link from "next/link";
 import { DEFAULT_LOCALE, translate } from "../lib/translations";
 
 export function LandingHero() {
   const locale = DEFAULT_LOCALE;
   const t = (key: string) => translate(key, locale);
-  const docsLink = t("links.docs") as Route;
+  const docsLink = t("links.docs");
   const repoLink = t("links.repo");
 
   const features = [
@@ -49,12 +47,14 @@ export function LandingHero() {
           </p>
         </div>
         <div className="flex flex-wrap gap-3">
-          <Link
+          <a
             href={docsLink}
             className="inline-flex items-center justify-center rounded-lg bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow-md transition hover:shadow-lg"
+            target="_blank"
+            rel="noreferrer"
           >
             {t("landing.primaryCta")}
-          </Link>
+          </a>
           <a
             href={repoLink}
             className="inline-flex items-center justify-center rounded-lg border border-border px-4 py-2 text-sm font-medium text-foreground hover:bg-card"

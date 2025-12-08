@@ -11,6 +11,14 @@ const config: NextConfig = {
   ],
   typedRoutes: true,
   serverExternalPackages: [],
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "img.shields.io",
+      },
+    ],
+  },
 };
 
 export default config;

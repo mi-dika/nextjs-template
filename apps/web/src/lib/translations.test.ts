@@ -25,4 +25,13 @@ describe("translations", () => {
     expect(supportedLocales).toContain(DEFAULT_LOCALE);
     expect(new Set(supportedLocales).size).toBe(supportedLocales.length);
   });
+
+  it("exposes new landing call-to-action strings", () => {
+    const keys = ["landing.badge", "landing.starCta"];
+    keys.forEach((key) => {
+      expect(translate(key, DEFAULT_LOCALE)).toBe(
+        translations[DEFAULT_LOCALE][key],
+      );
+    });
+  });
 });

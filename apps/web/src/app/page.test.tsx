@@ -6,6 +6,10 @@ vi.mock("../components/landing-hero", () => ({
   LandingHero: () => <div data-testid="landing-hero">hero</div>,
 }));
 
+vi.mock("../components/landing-footer", () => ({
+  LandingFooter: () => <div data-testid="landing-footer">footer</div>,
+}));
+
 vi.mock("@midika/ui", () => ({
   Toaster: () => <div data-testid="toaster" />,
 }));
@@ -15,6 +19,7 @@ describe("HomePage", () => {
     const html = renderToStaticMarkup(<HomePage />);
 
     expect(html).toContain('data-testid="landing-hero"');
+    expect(html).toContain('data-testid="landing-footer"');
     expect(html).toContain('data-testid="toaster"');
   });
 });

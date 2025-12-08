@@ -4,17 +4,23 @@ import { LandingHero } from "./landing-hero";
 import { DEFAULT_LOCALE, translations } from "../lib/translations";
 
 describe("LandingHero", () => {
-  it("renders headline, subtitle, and CTAs from translations", () => {
+  it("renders hero copy, CTAs, and GitHub badge from translations", () => {
     const html = renderToStaticMarkup(<LandingHero />);
     const t = translations[DEFAULT_LOCALE];
 
+    expect(html).toContain(t["landing.badge"]);
     expect(html).toContain(t["landing.title"]);
     expect(html).toContain(t["landing.subtitle"]);
     expect(html).toContain(t["landing.primaryCta"]);
     expect(html).toContain(t["landing.secondaryCta"]);
+    expect(html).toContain(t["landing.starCta"]);
+    expect(html).toMatch(
+      new RegExp(`<a[^>]+href="${t["links.repo"]}"[^>]*>`, "i"),
+    );
+    expect(html).toMatch(/github\.com\/mi-dika\/nextjs-template/);
   });
 
-  it("renders all feature titles and bodies", () => {
+  it("renders feature grid and stack items", () => {
     const html = renderToStaticMarkup(<LandingHero />);
     const t = translations[DEFAULT_LOCALE];
     const featureKeys = [
@@ -24,28 +30,29 @@ describe("LandingHero", () => {
       "features.testing",
       "features.dx",
     ] as const;
+    const stackKeys = [
+      "landing.stack.next",
+      "landing.stack.convex",
+      "landing.stack.turbo",
+      "landing.stack.tailwind",
+      "landing.stack.vitest",
+    ];
 
     featureKeys.forEach((key) => {
       expect(html).toContain(t[`${key}.title`]);
       expect(html).toContain(t[`${key}.body`]);
     });
+
+    stackKeys.forEach((key) => {
+      expect(html).toContain(t[key]);
+    });
   });
 
-  it("uses translated doc and repo links with external targets", () => {
+  it("renders a GitHub star counter placeholder", () => {
     const html = renderToStaticMarkup(<LandingHero />);
     const t = translations[DEFAULT_LOCALE];
 
-    expect(html).toMatch(
-      new RegExp(
-        `<a[^>]+href="${t["links.docs"]}"[^>]+target="_blank"[^>]+rel="noreferrer"`,
-        "i",
-      ),
-    );
-    expect(html).toMatch(
-      new RegExp(
-        `<a[^>]+href="${t["links.repo"]}"[^>]+target="_blank"[^>]+rel="noreferrer"`,
-        "i",
-      ),
-    );
+    expect(html).toContain(t["landing.stars.label"]);
+    expect(html).toContain(t["landing.stars.loading"]);
   });
 });
